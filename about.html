@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Builders Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+
+  <link rel="stylesheet" href="home.css">
+<style>
+    .hero-section {
+        position: relative;
+        height: 70vh;
+        background: url("images/iStock-1460762245-1030x693-1.jpg") center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .hero-section .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.35);
+    }
+
+    .hero-section .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-person {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 3.8rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .mission-section {
+        padding: 80px 15px;
+        background-color: #ffffff;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 20px;
+    }
+
+    .section-desc {
+        margin: 25px auto 50px 50px;
+        font-size: 1.3rem;
+        color: #000;
+        line-height: 1.8;
+    }
+
+    .image-wrapper img {
+        max-width: 600px;
+        border-radius: 20px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .mv-section {
+        padding: 70px 0;
+    }
+
+    .mv-block {
+         margin-bottom: 40px;
+    }
+
+    .mv-block h2 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 20px;
+    }
+
+    .mv-block p {
+        font-size: 1.3rem;
+        color: #000;
+        line-height: 1.8;
+        max-width: 100%;
+    }
+
+    hr {
+        border: none;
+        border-top: 2px solid #9a9595;
+        margin: 40px 0;
+    }
+
+    .portfolio-heading {
+        padding: 60px 0 40px;
+        text-align: center;
+    }
+
+    .portfolio-heading h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 35px;
+    }
+
+    .portfolio-heading h2 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #000;
+        margin: auto;
+    }
+
+    .portfolio-section {
+        background: linear-gradient(180deg, #2b2f36, #1f2328);
+        padding: 60px 30px;
+    }
+
+    .portfolio-card {
+        border-radius: 18px;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .portfolio-card img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 18px;
+    }
+
+    .card-title {
+        margin-top: 10px;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+
+    .stats-bar {
+  background: linear-gradient(90deg, #0a0f3d, #121a5a);
+  color: #fff;
+  padding: 40px 0;
+  border-radius: 18px;
+  margin: 40px 30px;
+}
+
+.stats-bar h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+    @media (max-width: 992px) {
+        .hero-section {
+            height: auto;
+            padding: 80px 0;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .hero-person {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .image-wrapper img {
+            max-width: 100%;
+        }
+
+        .mv-block h2 {
+            font-size: 2rem;
+        }
+
+        .mv-block p {
+            font-size: 1rem;
+        }
+
+        .portfolio-card img {
+            height: 300px;
+        }
+
+        .portfolio-heading h2 {
+            font-size: 1.7rem;
+        }
+    }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="home.html">
+            <img src="images/9c0f86b3a5860ad347734235d6aad709e0eaced4.png" alt="Logo" width="80" style="border-radius: 50%;">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link " href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link " href="project.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link " href="career.html">Career</a></li>
+                <li class="nav-item "><a class="nav-link active" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <a href="login.html" class="login">Login</a> <span style="color: white;margin: auto 5px;">/</span> <a href="signup.html" class="login">Signup</a> 
+        </div>
+    </div>
+</nav>
+
+<section class="hero-section">
+  <div class="overlay"></div>
+
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="text-white hero-text text-end">
+                <h1>
+                Building With Love, Growing <br>
+                with Trust
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mission-section">
+    <div class="container">
+
+        <h2 class="section-title">
+        Raising Standard with Every Projects
+        </h2>
+
+        <p class="section-desc">
+        We build every project on decades of trust, raising the bar high not only in quality
+        but also in how people experience home.
+        </p>
+
+        <div class="image-wrapper">
+        <img src="images/mission-C7l-Kpnq.jpg" alt="Mission Vision Values" class="img-fluid d-block" style="margin: auto;">
+        </div>
+
+    </div>
+</section>
+
+<section class="mv-section">
+  <div class="container">
+    <div class="mv-block">
+      <h2>Mission</h2>
+      <p>
+        To consistently exceed the expectations of our investors, corporate clients,
+        and consumers by delivering longer-lasting, higher-quality construction with a focus on transparency,
+        improved specifications, timely delivery, and unwavering professionalism.
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="mv-block">
+      <h2>Vision</h2>
+      <p>
+        To be a leading real estate developer, setting new benchmarks for top-notch projects
+        and concepts across all markets, propelling the development of contemporary India,
+        while creating outstanding value to our investors and clients.
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="mv-block">
+      <h2>Values</h2>
+      <p>
+        We build residential masterpieces with the same love and detail we would devote to our own homes,
+        emphasizing quality, standardization & attention to detail. Grounded in sound cultural values
+        from the very beginning, we make sure each project is a reflection of the integrity that defines us.
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="mv-block">
+      <h2>Passion</h2>
+      <p>
+        We pour our heart and soul in constructing homes that our customers will love forever. Supported by state-of-the-art research, the most advanced technologies, and flawless materials, we strive to provide homes that inspire warmth, comfort, and enduring luxuy.
+      </p>
+    </div>
+    
+    <hr>
+  </div>
+</section>
+
+<section class="portfolio-heading">
+  <div class="container">
+    <h1>What we Bring to Life</h1>
+    <h2>
+      Magizh Builders is committed to providing its clients with a comprehensive
+      portfolio for all their real-estate need.
+    </h2>
+  </div>
+</section>
+
+<section class="portfolio-section">
+    <div class="container-fluid">
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="portfolio-card">
+                <img src="images/offerings-1-ePVJEFBZ.jpg" alt="">
+                <div class="card-title">Residential</div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="portfolio-card">
+                <img src="images/offerings-3-D2sD0ZPl.jpg" alt="">
+                <div class="card-title">Plotted Land</div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="portfolio-card">
+                <img src="images/offerings-2-DhacZgL1.jpg" alt="">
+                <div class="card-title">IT Company</div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="portfolio-card">
+                <img src="images/offerings-4-CjrBu9AX.jpg" alt="">
+                <div class="card-title">Hospitality</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="stats-bar">
+  <div class="container-fluid">
+    <div class="row text-center align-items-center">
+
+      <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+        <h2>22+ <span style="margin-left: 5px;font-size: 1.1rem;">Years of Experience</span></h2>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+        <h2>1000+ <span style="margin-left: 5px;font-size: 1.1rem;">Happy Families</span></h2>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
+        <h2>1 Million+ <span style="margin-left: 5px;font-size: 1.1rem;">area developed</span></h2>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h2>300+ <span style="margin-left: 5px;font-size: 1.1rem;">Projects Built</span></h2>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section mt-5">
+    <div class="container-fluid">
+        <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex align-items-center mb-3">
+                    <a class="navbar-brand fw-bold" href="home.html">
+                        <img src="images/9c0f86b3a5860ad347734235d6aad709e0eaced4.png" alt="Logo" width="80" style="border-radius: 50%;">
+                    </a>
+                    <h4 class="ms-2 text-white fw-bold fs-2">Magizh Builders</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Pricing</h5>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Add Properties</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Legal</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Licence agreement</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Get In Touch</h5>
+
+                <p>
+                <i class="bi bi-geo-alt-fill"></i>
+                39, Kodambakkam Road,<br>
+                Ethiraj Nagar, West Mambalam,<br>
+                Chennai - 600033, Tamilnadu, India.
+                </p>
+
+                <p>
+                <i class="bi bi-telephone-fill"></i>
+                +91 123 456 789
+                </p>
+
+                <p>
+                <i class="bi bi-envelope-fill"></i>
+                info@magizhbuilders.com
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

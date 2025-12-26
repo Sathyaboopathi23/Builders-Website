@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Builders Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+
+  <link rel="stylesheet" href="home.css">
+<style>
+    .hero-section {
+        position: relative;
+        height: 70vh;
+        background: url("images/62310c40f73d7da7f03fad5cfc781e2c88c31cc6.png") center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .hero-section .overlay {
+        position: absolute;
+        inset: 0;
+        background:rgba(1, 123, 198,0.3);
+    }
+
+    .hero-section .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-person {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 3.8rem;
+        font-weight: 700;
+        line-height: 1.3;
+        
+    }
+    .hero-text p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-left: 200px;
+    }
+
+    .contact-section {
+        background: #f8f9fb;
+    }
+
+    .contact-card {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .form-control {
+        border-radius: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .submit-btn {
+        background: #1e2dbb;
+        color: #fff;
+        border-radius: 10px;
+    }
+
+    .submit-btn:hover {
+        background: #152199;
+        color: #fff;
+    }
+
+    .info-item {
+        display: flex;
+        gap: 15px;
+    }
+
+    .info-item i {
+        font-size: 22px;
+        color: #000;
+    }
+
+    .info-item p {
+        margin: 0;
+        color:#000;
+    }
+
+    .social-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        margin-right: 10px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .social-icons a:nth-child(1){ background:#0a66c2;}
+    .social-icons a:nth-child(2){ background:#e1306c;}
+    .social-icons a:nth-child(3){ background:#1877f2;}
+    .social-icons a:nth-child(4){ background:#ff0000;}
+    
+    @media (max-width: 992px) {
+        .hero-section {
+            height: auto;
+            padding: 80px 0;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .hero-person {
+            margin-bottom: 30px;
+        }
+
+       
+    }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="home.html">
+            <img src="images/9c0f86b3a5860ad347734235d6aad709e0eaced4.png" alt="Logo" width="80" style="border-radius: 50%;">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link " href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link " href="project.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link " href="career.html">Career</a></li>
+                <li class="nav-item "><a class="nav-link " href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <a href="login.html" class="login">Login</a> <span style="color: white;margin: auto 5px;">/</span> <a href="signup.html" class="login">Signup</a> 
+        </div>
+    </div>
+</nav>
+
+<section class="hero-section">
+  <div class="overlay"></div>
+
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="text-white hero-text text-center">
+                <h1>
+                Connecting Dreams
+                </h1>
+                <p class="text-white hero-text">Contact us Today!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section py-5">
+    <div class="container-fluid">
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <div class="contact-card p-4 p-lg-5">
+                <h2 class="fw-bold mb-4">
+                    Your Perfect Dreams Start with a Conversation!
+                </h2>
+
+                <form>
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold fs-4">Full Name*</label>
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold fs-4">Phone Number*</label>
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold fs-4">Email Address*</label>
+                        <input type="email" class="form-control form-control-lg">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold fs-4">Enter Your Message</label>
+                        <textarea rows="5" class="form-control form-control-lg"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn px-5 py-2">
+                    Submit
+                    </button>
+                </form>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="contact-card p-4 p-lg-5 mb-4">
+                <h4 class="fw-bold mb-4 fs-3">Contact Information</h4>
+
+                <div class="info-item mb-3">
+                    <i class="bi bi-geo-alt"></i>
+                    <div>
+                        <h6 class="fw-bold mb-1 fs-4">Address</h6>
+                        <p>
+                            Magizh Builders, Ground Floor No.5 Bishop Wallers Avenue
+                            Mylapore, Chennai - 600004, Tamilnadu
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-item mb-3">
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                        <h6 class="fw-bold mb-1 fs-4">Phone</h6>
+                        <p>+91 123 456 789</p>
+                    </div>
+                </div>
+
+                <div class="info-item mb-3">
+                    <i class="bi bi-envelope"></i>
+                    <div>
+                        <h6 class="fw-bold mb-1 fs-4">Email</h6>
+                        <p>magizhbuilders@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="bi bi-clock"></i>
+                    <div>
+                        <h6 class="fw-bold mb-1 fs-4">Business Hours</h6>
+                        <p>Mon - Sat<br>10.00 AM - 7.00 PM</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="contact-card p-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-people me-2"></i>Connect with us
+                    </h5>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section mt-5">
+    <div class="container-fluid">
+        <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex align-items-center mb-3">
+                    <a class="navbar-brand fw-bold" href="home.html">
+                        <img src="images/9c0f86b3a5860ad347734235d6aad709e0eaced4.png" alt="Logo" width="80" style="border-radius: 50%;">
+                    </a>
+                    <h4 class="ms-2 text-white fw-bold fs-2">Magizh Builders</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Pricing</h5>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Add Properties</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Legal</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Licence agreement</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Get In Touch</h5>
+
+                <p>
+                <i class="bi bi-geo-alt-fill"></i>
+                39, Kodambakkam Road,<br>
+                Ethiraj Nagar, West Mambalam,<br>
+                Chennai - 600033, Tamilnadu, India.
+                </p>
+
+                <p>
+                <i class="bi bi-telephone-fill"></i>
+                +91 123 456 789
+                </p>
+
+                <p>
+                <i class="bi bi-envelope-fill"></i>
+                info@magizhbuilders.com
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Builders Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+
+  <link rel="stylesheet" href="home.css">
+  <style>
+    .projects-hero {
+        margin: 50px auto;
+        position: relative;
+        height: 70vh;
+        background-image: url('images/download.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .projects-hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(1, 123, 198,0.7);
+    }
+
+    .small-title {
+        color: #ffd400;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+        display: inline-block;
+    }
+
+    .hero-title {
+        font-size: 4.8rem;
+        font-weight: 700;
+        letter-spacing: 8px;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 2.5rem;
+        font-weight: 500;
+        float: right;
+    }
+
+    .career-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-title {
+        font-size: 3.5rem;
+        font-weight: 400;
+        color: #000;
+        line-height: 1.3;
+    }
+
+    .main-title span {
+        font-weight: 700;
+    }
+
+    .career-desc {
+        font-size: 1.1rem;
+        color: #212020;
+        max-width: 650px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .hr-section h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .hr-section p {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .career-cards {
+        background-color: #fff;
+    }
+
+    .job-card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 40px 20px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    .icon {
+        width: 70px;
+        height: 70px;
+        background: #000;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        font-size: 2rem;
+    }
+
+    .job-card h4 {
+        font-size: 1.8rem;
+        color: black;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .location {
+        font-size: 1.3rem;
+        color: #000;
+        font-weight: 600;
+        margin-bottom: 35px;
+    }
+
+    .apply-btn {
+        background-color: #1f2fa3;
+        color: #fff;
+        padding: 10px 35px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }
+
+    .apply-btn:hover {
+        background-color: #15208a;
+        color: #fff;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .image-grid img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 14px;
+    }
+
+    .title {
+        font-size: 2.8rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1.5rem;
+        color:black;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 3rem;
+            letter-spacing: 4px;
+        }
+
+        .hero-subtitle {
+            text-align: left;
+            margin-top: 15px;
+        }
+    }
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="home.html">
+            <img src="images/9c0f86b3a5860ad347734235d6aad709e0eaced4.png" alt="Logo" width="80" style="border-radius: 50%;">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link " href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link " href="project.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link active" href="career.html">Career</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <a href="login.html" class="login">Login</a> <span style="color: white;margin: auto 5px;">/</span> <a href="signup.html" class="login">Signup</a> 
+        </div>
+    </div>
+</nav>
+
+<section class="projects-hero d-flex align-items-center justify-content-center">
+    <div class="overlay"></div>
+    <div class="container" style="z-index: 1;">
+        <div class="row">
+            <div class="col-lg-9 text-white">
+                <span class="small-title">Success Path</span>
+                <h1 class="hero-title">Build You Career</h1>
+                <h2 class="hero-subtitle text-white">
+                Your Future begins Here!
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="career-section d-flex align-items-center">
+    <div class="container text-center">
+    
+        <h1 class="main-title">
+        Create Your Destiny with <br>
+        <span>Magizh Builders</span>
+        </h1>
+
+        <p class="career-desc mx-auto">
+        Join us to Craft exceptional homes and create lasting impression.
+        Explore current openings grow with us today.
+        </p>
+
+        <div class="hr-section">
+            <h3>HR</h3>
+            <p>Vasanth Kumar</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="career-cards py-5">
+    <div class="container">
+        <div class="row g-5 justify-content-center">
+            <div class="col-md-6">
+                <div class="job-card text-center">
+                    <div class="icon">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <h4>Admin</h4>
+                    <p class="location">Chennai</p>
+                    <button class="btn apply-btn">Apply Now</button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="job-card text-center">
+                    <div class="icon">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <h4>Digital & Marketing</h4>
+                    <p class="location">Chennai</p>
+                    <button class="btn apply-btn">Apply Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5 justify-content-center my-5">
+            <div class="col-md-6">
+                <div class="job-card text-center">
+                    <div class="icon">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <h4>Civil Engineer</h4>
+                    <p class="location">Chennai</p>
+                    <button class="btn apply-btn">Apply Now</button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="job-card text-center">
+                    <div class="icon">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <h4>Quality Surveyor</h4>
+                    <p class="location">Chennai</p>
+                    <button class="btn apply-btn">Apply Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+            <div class="col-md-6">
+                <div class="job-card text-center">
+                    <div class="icon">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <h4>Human Resources</h4>
+                    <p class="location">Chennai</p>
+                    <button class="btn apply-btn">Apply Now</button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="job-card text-center">
+                    <div class="icon">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <h4>Other</h4>
+                    <p class="location">Chennai</p>
+                    <button class="btn apply-btn">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="media-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <div class="image-grid">
+                    <img src="images/0eb4b8fe077c9dd8e6e3449234405ab2.jpg" alt="img1">
+                    <img src="images/OIP.jpeg" alt="img2" style="margin-top: 50px;">
+                    <img src="images/OIP (1).jpeg" alt="img3" style="margin-top: 0;">
+                    <img src="images/team3.jpg" alt="img4">
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <h2 class="title">Make your Dreams Fulfill</h2>
+                <p class="description">
+                Celebrating milestones, sharing moments.
+                Explore the media stories that highlight our
+                journey of excellence.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section mt-5">
+    <div class="container-fluid">
+        <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex align-items-center mb-3">
+                    <a class="navbar-brand fw-bold" href="home.html">
+                        <img src="images/9c0f86b3a5860ad347734235d6aad709e0eaced4.png" alt="Logo" width="80" style="border-radius: 50%;">
+                    </a>
+                    <h4 class="ms-2 text-white fw-bold fs-2">Magizh Builders</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Pricing</h5>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Add Properties</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Legal</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Licence agreement</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Get In Touch</h5>
+
+                <p>
+                <i class="bi bi-geo-alt-fill"></i>
+                39, Kodambakkam Road,<br>
+                Ethiraj Nagar, West Mambalam,<br>
+                Chennai - 600033, Tamilnadu, India.
+                </p>
+
+                <p>
+                <i class="bi bi-telephone-fill"></i>
+                +91 123 456 789
+                </p>
+
+                <p>
+                <i class="bi bi-envelope-fill"></i>
+                info@magizhbuilders.com
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

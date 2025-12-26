@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Builders Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+  <link rel="stylesheet" href="home.css">
+  <style>
+    .projects-hero {
+        margin: 50px auto;
+        position: relative;
+        height: 70vh;
+        background-image: url('images/pngtree-building-modern-city-picture-image_2444020.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .projects-hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(63, 135, 187, 0.85);
+    }
+
+    .projects-hero .content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .projects-hero h1 {
+        color: #ffffff;
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    .projects-section {
+        background-color: #ffffff;
+    }
+
+    .project-card {
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .project-title {
+        margin-top: 20px;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #000;
+    }
+
+    @media (max-width: 768px) {
+        .projects-hero {
+            height: 50vh;
+        }
+
+        .projects-hero h1 {
+            font-size: 40px;
+        }
+
+        .project-card img {
+            height: 300px;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="home.html">
+            <img src="images/9c0f86b3a5860ad347734235d6aad709e0eaced4.png" alt="Logo" width="80" style="border-radius: 50%;">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link " href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="project.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <a href="login.html" class="login">Login</a> <span style="color: white;margin: auto 5px;">/</span> <a href="signup.html" class="login">Signup</a> 
+        </div>
+    </div>
+</nav>
+
+<section class="projects-hero d-flex align-items-center justify-content-center">
+  <div class="overlay"></div>
+
+  <div class="content text-center">
+    <h1>Our Projects</h1>
+  </div>
+</section>
+
+<section class="projects-section py-5">
+    <div class="container-fluid">
+        <div class="row g-4 my-5">
+            <div class="col-lg-6 col-md-6">
+                <div class="project-card" onclick="window.location.href='residential.html'">
+                    <img src="images/Rectangle.png" alt="Residential Project" class="img-fluid">
+                    <h3 class="project-title">Residential</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="project-card" onclick="window.location.href='commercial.html'">
+                    <img src="images/202505091144-new-project-20.jpg" alt="Commercial Project" class="img-fluid">
+                    <h3 class="project-title">Commercial</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 my-5">
+            <div class="col-lg-6 col-md-6">
+                <div class="project-card" onclick="window.location.href='luxury.html'">
+                    <img src="images/Rectangle 64.png" alt="Residential Project" class="img-fluid">
+                    <h3 class="project-title">Luxury</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="project-card" onclick="window.location.href='plot.html'">
+                    <img src="images/202505200430-202505200428-kg-new-resize5.jpg" alt="Commercial Project" class="img-fluid">
+                    <h3 class="project-title">Plotted Development</h3>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+<footer class="footer-section mt-5">
+    <div class="container-fluid">
+        <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex align-items-center mb-3">
+                    <a class="navbar-brand fw-bold" href="home.html">
+                        <img src="images/9c0f86b3a5860ad347734235d6aad709e0eaced4.png" alt="Logo" width="80" style="border-radius: 50%;">
+                    </a>
+                    <h4 class="ms-2 text-white fw-bold fs-2">Magizh Builders</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Pricing</h5>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Add Properties</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Legal</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Licence agreement</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Get In Touch</h5>
+
+                <p>
+                <i class="bi bi-geo-alt-fill"></i>
+                39, Kodambakkam Road,<br>
+                Ethiraj Nagar, West Mambalam,<br>
+                Chennai - 600033, Tamilnadu, India.
+                </p>
+
+                <p>
+                <i class="bi bi-telephone-fill"></i>
+                +91 123 456 789
+                </p>
+
+                <p>
+                <i class="bi bi-envelope-fill"></i>
+                info@magizhbuilders.com
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
